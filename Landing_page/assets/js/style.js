@@ -459,7 +459,7 @@ function animateOnScroll() {
     let screenY = window.scrollY
     let coordinatesSearch = $('.search-product').offsetTop
     let allProduct = $$('.product-item')
-    let distanse = 210
+    let distanse = 250
     Array.from(allProduct).forEach(product => {
         let showProducts = product.offsetTop
         if(screenY >= showProducts - distanse){
