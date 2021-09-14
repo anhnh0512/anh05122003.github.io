@@ -236,7 +236,27 @@ function loadCategory() {
     let allBtn = document.createElement('span')
     allBtn.innerHTML = 'All'
     allBtn.addEventListener('click',function (params) {
-        loadJSON(data)
+        let html = ''
+        data.forEach(product => {
+            html += `
+            <div class = "product-item show-products">
+                <div class = "product-img">
+                    <img src = "${product.imgSrc}" alt = "arm chair">
+                    <button class = "add-to-cart">
+                        <i class = "fas fa-shopping-cart"></i>
+                        Add To Cart
+                    </button>
+                </div>
+                <div class = "product-content">
+                    <h3 class = "product-name">${product.name}</h3>
+                    <span class = "product-category">${product.category}</span>
+                    <p class = "product-price">${product.price}</p>
+                </div>
+            </div>
+            `
+            $('.product-list').innerHTML = html
+        })
+       
     })
     $('.category-product').appendChild(allBtn)
     data.forEach(product => {
@@ -268,7 +288,7 @@ function getCategory() {
         product.classList.add('hide')
     })
     htmls = arr.map(product=> {
-        return `<div class = "product-item">
+        return `<div class = "product-item show-products">
                     <div class = "product-img">
                         <img src = "${product.imgSrc}" alt = "arm chair">
                         <button class = "add-to-cart">
@@ -286,6 +306,8 @@ function getCategory() {
     })
     $('.product-list').innerHTML = htmls.join('')
 }
+
+//add product
 function purchaseProduct(e) {
     if(e.target.classList.contains('add-to-cart')){
         let product = e.target.parentElement.parentElement
@@ -346,7 +368,7 @@ function handleSearchProduct(searchInput) {
             product.classList.add('hide')
         })
         htmls = getData.map(product => {
-            return `<div class = "product-item">
+            return `<div class = "product-item show-products">
             <div class = "product-img">
                 <img src = "${product.imgSrc}" alt = "arm chair">
                 <button class = "add-to-cart">
@@ -459,9 +481,14 @@ function animateOnScroll() {
     let screenY = window.scrollY
     let coordinatesSearch = $('.search-product').offsetTop
     let allProduct = $$('.product-item')
-    let distanse = 250
+    let distanse = 650
+    console.log(distanse)
+    console.log(screenY)
     Array.from(allProduct).forEach(product => {
         let showProducts = product.offsetTop
+        let a = screenY >= showProducts - distanse;
+        console.log(a)
+        console.log(showProducts)
         if(screenY >= showProducts - distanse){
             product.classList.add('show-products')
         }
