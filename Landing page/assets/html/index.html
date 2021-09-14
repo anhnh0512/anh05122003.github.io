@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Shop</title>
+            <meta charset="utf-8">
+            <link rel = "stylesheet" href="../css/style.css">
+            <link rel = "stylesheet" href="../css/reponsive.css">
+            <meta name = "viewport" content="width=device-width,initial-scale=1">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        </head>
+
+        <body>
+            <header>
+                <div class = "container">
+                    <!--Navigation-->
+                    <nav class = "navbar">
+                        <div class = "header-img">
+                            <a href = "index.html" class = "navbar-brand">Vintage</a>
+                        </div>
+                        <div class = "header-menu">
+                            <ul>
+                                <li><a class = "nav-link" href="#">Home</a></li>
+                                <li><a class = "nav-link" href="#">Gallery</a></li>
+                                <li><a class = "nav-link" href="#">New Arrivals</a></li>
+                                <li><a class = "nav-link" href="#">Blog</a></li>
+                                <li><a class = "nav-link" href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <button type="button" class = "navbar-toogler">
+                            <i class ="fas fa-bars show_icon"></i>
+                        </button>
+                        <div class ="cover"></div> 
+                        <div class = "navbar-collapse">
+                            <ul>
+                                <li><a href = "#">Home</a></li>
+                                <li><a href = "#">Gallery</a></li>
+                                <li><a href = "#">New Arrivals</a></li>
+                                <li><a href = "#">Blog</a></li>
+                                <li><a href = "#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class = "cart">
+                            <div class = "info">
+                                <button type="button" id = "button-login">       
+                                    <i class="fas fa-user user-login"></i>
+                                </button>
+                                <!-- <div class = "overlay-dialog"></div> -->
+                                <div class = "dialog overlay-dialog">
+                                    <div class = "overlay-close"></div>
+                                    <div class = "dialog-body">
+                                        <form action=""metthod = "" id = "form-1">
+                                            <div class = "form-group">
+                                                <label for="fullname" class = "form-label">Tên đầy đủ</label>
+                                                <input class = "input-group" id = "fullname" name = "fullname" type="text" placeholder="VD : Nguyễn Hoàng Anh">
+                                                <span class = "form-messege"></span>
+                                            </div>
+                                            <div class = "form-group">
+                                                <label for="password" class = "form-label">Mật khẩu : </label>
+                                                <input id = "password" name = "password" type="password" placeholder="Nhập mật khẩu">
+                                                <span class = "form-messege"></span>
+                                            </div>
+                                            <div class = "form-group form-button">
+                                                <button class = "form-submit">Đăng nhập</button>
+                                                <h3 class = "note">Nếu chưa có tài khoản , bấm <a href = "#"> vào đây</a> </h3>
+                                                <!-- <button class = "register-button">Đăng ký</button> -->
+                                            </div>
+                                            <div class = "form-group">
+                                                <button type="button" class = "button_group">
+                                                    <i class="fab fa-facebook"></i>
+                                                    Kết nối với Facebook
+                                                </button>
+                                                <button type="button" class = "button_group">
+                                                    <i class="fab fa-google"></i>
+                                                    Kết nối với Google   
+                                                </button>
+                                            </div>
+                                        </form> 
+                                    </div>
+                                </div>
+                                <button type="button" class = "cart-button" id = "cart-btn">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                    <span id = "cart-count-info">0</span>
+                                </button>
+                            </div>
+            
+                            <div class = "cart-container">
+                                <div class = "cart-list">
+                                    <!-- <div class = "cart-item">
+                                        <img class = "img-fluid" src = "../images/armchair.png" alt = "armchair image">
+                                        <div class = "cart-item-info">
+                                            <h3 class = "cart-item-name">Arm Chair</h3>
+                                            <span class = "cart-item-category">Chair</span>
+                                            <span class = "cart-item-price">$120.00</span>
+                                        </div>
+                                        <button type="button" class = "del-cart-item">
+                                            <i class = "fas fa-times"></i>
+                                        </button>
+                                    </div> -->
+                                </div>
+                                <div class = "cart-total">
+                                    <h3>Total : $</h3>
+                                    <span id = "cart-total-value">$120.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- banner header -->
+                    <div class  = "banner">
+                        <div class = "banner-content">
+                            <h1>Furniture For Your Home</h1>
+                            <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet, quis nisi recusandae assumenda ea sequi obcaecati accusantium in provident dolore debitis autem neque vel commodi atque voluptates incidunt aliquam delectus veritatis? Exercitationem, fugit sed!</p>
+                            <div class = "btns">
+                                <button type="button" class = "btn">Know more</button>
+                                <button type="button" class = "btn">More info</button>
+                            </div>
+                        </div>
+                        <div class = "banner-img">
+                            <img src = "../images/sofa.png" alt = "sofa">
+                        </div>
+                        <!-- <div class = "banner-btn">
+                            <button type="button" class = "prev-button">
+                                <i class="fas fa-angle-left"></i>
+                            </button>
+                            <button type = "button"  class  = "next-button">
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div> -->
+                    </div>
+                    <!-- end of banner -->
+                </div>
+            </header>
+            <!-- end header -->
+            <!-- product section -->
+            <section class = "product">
+                <div class = "container">
+                    <h2>Our Product</h2>
+                    <div class = "search-product">
+                        <div class = "guide">
+                            <span>Gõ tên sản phẩm và bấm vào icon tìm kiếm để tìm kiếm nha cậu
+                                 <i class="far fa-grin-tongue-squint"></i> 
+                            </span>
+                        </div>
+                        <form name = "form-2" action="" class="form-2">
+                            <label for = "search">Search Product : </label>
+                            <input name = "search" type = "search" id = "search">
+                            <button type="button" id = "search_product">
+                                <i class="material-icons search-icon">search</i>
+                            </button>
+                        </form>
+                        <div class = "category-product">
+                            
+                        </div>
+                    </div>
+                    <div class = "product-list">
+                        <!-- <div class = "product-item">
+                            <div class = "product-img">
+                                <img src = "../images/armchair.png" alt = "arm chair">
+                                <button class = "add-to-cart">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                    Add To Cart
+                                </button>
+                            </div>
+                            <div class = "product-content">
+                                <h3 class = "product-name">Arm Chair</h3>
+                                <span class = "product-category">Bed</span>
+                                <p class = "product-price">$120.00</p>
+                            </div>
+                        </div>
+                        <div class = "product-item">
+                            <div class = "product-img">
+                                <img src = "../images/armchair.png" alt = "arm chair">
+                                <button class = "add-to-cart">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                    Add To Cart
+                                </button>
+                            </div>
+                            <div class = "product-content">
+                                <h3 class = "product-name">Arm Chair</h3>
+                                <span class = "product-category">Bed</span>
+                                <p class = "product-price">$120.00</p>
+                            </div>
+                        </div>
+                        <div class = "product-item">
+                            <div class = "product-img">
+                                <img src = "../images/armchair.png" alt = "arm chair">
+                                <button class = "add-to-cart">
+                                    <i class = "fas fa-shopping-cart"></i>
+                                    Add To Cart
+                                </button>
+                            </div>
+                            <div class = "product-content">
+                                <h3 class = "product-name">Arm Chair</h3>
+                                <span class = "product-category">Bed</span>
+                                <p class = "product-price">$120.00</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+            <!-- end section  -->
+            <!-- start footer -->
+            <footer>
+                <div class = "footer-banner">
+                    <div class = "container">
+                        <h2>Unlimited Furniture Collection</h2>
+                        <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores est quod maxime nisi possimus corporis qui aliquid molestias sit iusto itaque, cum delectus tempore, distinctio velit. Repellat reiciendis suscipit quidem aliquid ipsam, nemo minus repudiandae quas eligendi natus voluptate nostrum?</p>
+                        <button class = "btn" type="button">View More</button>
+                    </div>
+                </div>
+                <div class = "container">
+                    <div class = "social-icons">
+                        <a href = "#">
+                            <i class = "fab fa-facebook-f"></i>
+                        </a>
+                        <a href = "#">
+                            <i class = "fab fa-twitter"></i>
+                        </a>
+                        <a href = "#">
+                            <i class = "fab fa-instagram"></i>
+                        </a>
+                        <a href = "#">
+                            <i class = "fab fa-pinterest"></i>
+                        </a>
+                        <a href = "#">
+                            <i class = "fab fa-linkedin"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </footer>
+            <!-- end footer -->
+            <script src = "../js/style.js"></script>
+            <script src = "../js/validate.js"></script>
+            <script>
+                Validator({
+                    class : 'invalid',
+                    form:'#form-1',
+                    formGroupSelector:'.form-group',
+                    errorSelector : '.form-messege',
+                    rules: [
+                        Validator.isRequired('#fullname','Vui lòng nhập tài khoản'),
+                        Validator.minLength('#password',7,'Vui lòng nhập đúng mật khẩu'),
+                        // Validator.isRequired('#password_confirmation'),
+                        // Validator.isConfirmed('#password_confirmation',function() {
+                        //     return document.querySelector('#form-1 #password').value.trim();
+                        // },"Mật khẩu nhập lại không chính xác")
+                    ]
+                })
+            </script>
+        </body>
+    </html>

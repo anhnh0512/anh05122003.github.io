@@ -1,0 +1,122 @@
+[
+    {
+        "name" : "Armchair",
+        "category" : "Chair",
+        "price" : "50.25",
+        "imgSrc" : "../images/armchair_item1.png"
+    },
+    {
+        "name" : "Armchair",
+        "category" : "Armchair",
+        "price" : "102.00",
+        "imgSrc" : "../images/armchair_item2.png"
+    },
+    {
+        "name" : "Armchair",
+        "category" : "Armchair",
+        "price" : "15.00",
+        "imgSrc" : "../images/armchair_item3.png"
+    },
+    {
+        "name" : "Bunk bed",
+        "category" : "Bed",
+        "price" : "23.75",
+        "imgSrc" : "../images/bed_item1.png"
+    },
+    {
+        "name" : "Bunk bed",
+        "category" : "Bed",
+        "price" : "50.00",
+        "imgSrc" : "../images/bed_item2.png"
+    },
+    {
+        "name" : "Bunk bed",
+        "category" : "Bed",
+        "price" : "200.50",
+        "imgSrc" : "../images/bed_item3.png"
+    },
+    {
+        "name" : "Bunk bed",
+        "category" : "Bed",
+        "price" : "5.50",
+        "imgSrc" : "../images/bed_item4.png"
+    },
+    {
+        "name" : "Rooking chairs",
+        "category" : "Chair",
+        "price" : "25.00",
+        "imgSrc" : "../images/chair_item1.png"
+    },
+    {
+        "name" : "Deck chair",
+        "category" : "Chair",
+        "price" : "49.00",
+        "imgSrc" : "../images/chair_item2.png"
+    },
+    {
+        "name" : "Wooden chairs",
+        "category" : "Chair",
+        "price" : "60.99",
+        "imgSrc" : "../images/chair_item3.png"
+    },
+    {
+        "name" : "Wooden chairs",
+        "category" : "Chair",
+        "price" : "69.20",
+        "imgSrc" : "../images/chair_item4.png"
+    },
+    {
+        "name" : "Wooden chairs",
+        "category" : "Sofa",
+        "price" : "224.99",
+        "imgSrc" : "../images/chair_item5.png"
+    },
+    {
+        "name" : "Wooden Wardrobe",
+        "category" : "Closet",
+        "price" : "90.25",
+        "imgSrc" : "../images/closet_item1.png"
+    },
+    {
+        "name" : "Cupboard Closet",
+        "category" : "Closet",
+        "price" : "99.99",
+        "imgSrc" : "../images/cupboard_closet.png"
+    },
+    {
+        "name" : "Wooden Cupboard Closet",
+        "category" : "Closet",
+        "price" : "75.80",
+        "imgSrc" : "../images/cupboard_closet_item1.png"
+    },
+    {
+        "name" : "Iron Wardrobe",
+        "category" : "Closet",
+        "price" : "159.00",
+        "imgSrc" : "../images/cupboard_closet_item2.png"
+    },
+    {
+        "name" : "Fireplace",
+        "category" : "fireplace",
+        "price" : "100.50",
+        "imgSrc" : "../images/fireplace_item1.png"
+    },
+    {
+        "name" : "Piano",
+        "category" : "Piano",
+        "price" : "187.45",
+        "imgSrc" : "../images/piano.png"
+    },
+    {
+        "name" : "Pattern Pillow",
+        "category" : "Pillow",
+        "price" : "322.50",
+        "imgSrc" : "../images/pillow_item1.png"
+    },
+    {
+        "name" : "Pattern Pillow",
+        "category" : "Pillow",
+        "price" : "288.99",
+        "imgSrc" : "../images/pillow_item2.png"
+    }
+]
